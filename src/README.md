@@ -1,9 +1,9 @@
-# Flask app for Titanic: Machine Learning from Disaster
-**- Gaurav Modi**<br>
-_(last edit: 04/15/2018)_
-<p>This is a flask app to predict whether a particular passenger would survive. Along with the label, it shows the Survival probability too.
+# Aplicación Flask para Titanic
 
-## Packages Used:
+Esta es una aplicación Flask para predecir si un pasajero sobreviviría.
+
+## Paquetes Utilizados:
+
 ```
 + Json
 + Pandas
@@ -13,36 +13,36 @@ _(last edit: 04/15/2018)_
 + Scikit-Learn
 ```
 
-## Steps:
-### Data preperation and model building
-+ Reading data
-+ Splitting the data into training and testing data
-+ Imputing missing values from training dataset.
-+ Using values imputed from training data to fill missing values in testing dataset to avoid data leakage.
-+ Encoding Categorical predictors using sklearn LabelEncoder
-+ Fitting RandomForestClassifier with Training data
-+ Serializing the model to disk
+## Pasos:
 
-### Prediction on flask app
+### Preparación de datos y construcción del modelo
+
+- Lectura de datos
+- División de los datos en datos de entrenamiento y de prueba
+- Imputación de valores faltantes del conjunto de datos de entrenamiento.
+- Uso de valores imputados del conjunto de datos de entrenamiento para llenar valores faltantes en el conjunto de datos de prueba para evitar fugas de datos.
+- Codificación de predictores categóricos usando LabelEncoder de sklearn
+- Seleccion del modelo a traves de baseline
+- Serialización del modelo en disco
+
+### Predicción en la aplicación Flask
+
 ```
-+ Navigate to prediction page - http://localhost:5000/predict.
-+ User fill the form in the browser with required predictors value and then submit the form.
-+ Values provided by users are put into model to get predictions.
-+ The result from the model is showed to user on browser.
++ Navegar a la página de predicción - http://localhost:5000/predict.
++ El usuario completa el formulario en el navegador con los valores de los predictores requeridos y luego envía el formulario.
++ Los valores proporcionados por los usuarios se introducen en el modelo para obtener predicciones.
++ El resultado del modelo se muestra al usuario en el navegador.
 ```
 
-## To run the app
-+ Open terminal in main directory '/Titanic Flask App'.
-+ Then run app.py from terminal
+## Para ejecutar la aplicación
+
+- Abrir terminal en el directorio principal '/Flask_Titanic'.
+- Luego ejecutar app.py desde la terminal
 
 ```
 python app.py
 ```
-This will start flask app server. Now can open the site by opening http://localhost:5000<br>
-Note: Right now, app runs in debug mode
 
-## Future work
-+ Improve the model
-+ Provide drop down for user input
-+ Take user input as string for categorical data, instead of current method i.e. encoded numeric values.
-+ Improve the UI and UX.
+Esto iniciará el servidor de la aplicación Flask. Ahora puede abrir el sitio abriendo http://localhost:5000 `<br>`
+
+Nota: la aplicación se ejecuta en modo de depuración

@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-  <h1>Contact</h1>
-    <p>Hi, I'm Gaurav!</p>
+  <h1>Realizado por:</h1>
+    <p>Angel Rodrigo Naharro</p>
     
 {% endblock %}
