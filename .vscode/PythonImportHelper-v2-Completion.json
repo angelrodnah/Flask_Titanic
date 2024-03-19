@@ -1,0 +1,712 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "traceback",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "traceback",
+        "description": "traceback",
+        "detail": "traceback",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "importPath": "sklearn.externals",
+        "description": "sklearn.externals",
+        "isExtraImport": true,
+        "detail": "sklearn.externals",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "importPath": "sklearn.externals",
+        "description": "sklearn.externals",
+        "isExtraImport": true,
+        "detail": "sklearn.externals",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "TextField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "TextAreaField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "validators",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "StringField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "SubmitField",
+        "importPath": "wtforms",
+        "description": "wtforms",
+        "isExtraImport": true,
+        "detail": "wtforms",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "def predict():\n    if clf:\n        try:\n            json_ = request.json\n            query = pd.get_dummies(pd.DataFrame(json_))\n            # https://github.com/amirziai/sklearnflask/issues/3\n            # Thanks to @lorenzori\n            query = query.reindex(columns=model_columns, fill_value=0)\n            prediction = list(clf.predict(query))\n            return jsonify({'prediction': prediction})",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "def train():\n    # using random forest as an example\n    # can do the training separately and just update the pickles\n    from sklearn.ensemble import RandomForestClassifier as rf\n    df = pd.read_csv(training_data)\n    df_ = df[include]\n    categoricals = []  # going to one-hot encode categorical variables\n    for col, col_type in df_.dtypes.iteritems():\n        if col_type == 'O':\n            categoricals.append(col)",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "wipe",
+        "kind": 2,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "def wipe():\n    try:\n        shutil.rmtree('model')\n        os.makedirs(model_directory)\n        return 'Model wiped'\n    except Exception, e:\n        print str(e)\n        return 'Could not remove and recreate the model directory'\nif __name__ == '__main__':\n    try:",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "app = Flask(__name__)\n# inputs\ntraining_data = 'data/titanic.csv'\ninclude = ['Age', 'Sex', 'Embarked', 'Survived']\ndependent_variable = include[-1]\nmodel_directory = 'model'\nmodel_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "training_data",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "training_data = 'data/titanic.csv'\ninclude = ['Age', 'Sex', 'Embarked', 'Survived']\ndependent_variable = include[-1]\nmodel_directory = 'model'\nmodel_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "include = ['Age', 'Sex', 'Embarked', 'Survived']\ndependent_variable = include[-1]\nmodel_directory = 'model'\nmodel_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "dependent_variable",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "dependent_variable = include[-1]\nmodel_directory = 'model'\nmodel_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "model_directory",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "model_directory = 'model'\nmodel_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:\n        try:",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "model_file_name",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "model_file_name = '%s/model.pkl' % model_directory\nmodel_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:\n        try:\n            json_ = request.json",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "model_columns_file_name",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "model_columns_file_name = '%s/model_columns.pkl' % model_directory\n# These will be populated at training time\nmodel_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:\n        try:\n            json_ = request.json\n            query = pd.get_dummies(pd.DataFrame(json_))",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "model_columns",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "model_columns = None\nclf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:\n        try:\n            json_ = request.json\n            query = pd.get_dummies(pd.DataFrame(json_))\n            # https://github.com/amirziai/sklearnflask/issues/3\n            # Thanks to @lorenzori",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "clf",
+        "kind": 5,
+        "importPath": "src.files.main",
+        "description": "src.files.main",
+        "peekOfCode": "clf = None\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if clf:\n        try:\n            json_ = request.json\n            query = pd.get_dummies(pd.DataFrame(json_))\n            # https://github.com/amirziai/sklearnflask/issues/3\n            # Thanks to @lorenzori\n            query = query.reindex(columns=model_columns, fill_value=0)",
+        "detail": "src.files.main",
+        "documentation": {}
+    },
+    {
+        "label": "PredictorsForm",
+        "kind": 6,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "class PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form\n\tInherits: request.form class\n\t\"\"\"\n\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "def index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "def about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form\n\tInherits: request.form class\n\t\"\"\"\n\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "def predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "def train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "app = Flask(__name__)\n# Loading model so that it works on production\nmodel = joblib.load('./model/model.pkl')\n@app.route('/')\ndef index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "model = joblib.load('./model/model.pkl')\n@app.route('/')\ndef index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tp_class",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tsex",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tage",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tsibsp",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tparch",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tfare",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tembarked",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tform",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tp_class",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tsex",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tage",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tsibsp",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tparch",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tfare",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tembarked",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpredict_request",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpredict_request",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tprediction",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tprediction",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpredict_prob",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tpredict_prob",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tpredictors",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tlabel",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tage_fillna",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tembarked_fillna",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tcabin_fillna",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_train.Age",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_train.Embarked",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_train.Cabin",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_test.Age",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_test.Embarked",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tdf_test.Cabin",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:\n\t    if df_test[column].dtype == np.object:",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tle",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:\n\t    if df_test[column].dtype == np.object:\n\t        df_test[column] = le[column].transform(df_test[column])\n\t# Initializing the model",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "\tmodel",
+        "kind": 5,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "\tmodel = RandomForestClassifier(n_estimators=25, random_state=42)\n\t# Fitting the model with training data\n\tmodel.fit(X=df_train, y=y_train)\n\t# Saving the trained model on disk\n\tjoblib.dump(model, './model/model.pkl')\n\t# Return success message for user display on browser\n\treturn 'Success'\nif __name__ == '__main__':\n\t# Load the pre-trained model from the disk\n\t# model = joblib.load('./model/model.pkl')",
+        "detail": "src.app",
+        "documentation": {}
+    }
+]
