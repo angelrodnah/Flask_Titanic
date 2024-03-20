@@ -1,11 +1,11 @@
 [
     {
-        "label": "sys",
+        "label": "glob",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
         "documentation": {}
     },
     {
@@ -24,6 +24,51 @@
         "importPath": "shutil",
         "description": "shutil",
         "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
         "documentation": {}
     },
     {
@@ -77,22 +122,6 @@
         "documentation": {}
     },
     {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "render_template",
         "importPath": "flask",
         "description": "flask",
@@ -101,7 +130,7 @@
         "documentation": {}
     },
     {
-        "label": "flash",
+        "label": "request",
         "importPath": "flask",
         "description": "flask",
         "isExtraImport": true,
@@ -123,15 +152,6 @@
         "description": "sklearn.externals",
         "isExtraImport": true,
         "detail": "sklearn.externals",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -160,14 +180,6 @@
         "documentation": {}
     },
     {
-        "label": "TextAreaField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
         "label": "validators",
         "importPath": "wtforms",
         "description": "wtforms",
@@ -176,156 +188,12 @@
         "documentation": {}
     },
     {
-        "label": "StringField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "SubmitField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "joblib",
+        "label": "dill",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "joblib",
-        "description": "joblib",
-        "detail": "joblib",
-        "documentation": {}
-    },
-    {
-        "label": "OneHotEncoder",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "LabelEncoder",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "MinMaxScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
-        "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "cross_val_score",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "cross_validate",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "GridSearchCV",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
-        "label": "ColumnTransformer",
-        "importPath": "sklearn.compose",
-        "description": "sklearn.compose",
-        "isExtraImport": true,
-        "detail": "sklearn.compose",
-        "documentation": {}
-    },
-    {
-        "label": "make_pipeline",
-        "importPath": "sklearn.pipeline",
-        "description": "sklearn.pipeline",
-        "isExtraImport": true,
-        "detail": "sklearn.pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "LogisticRegression",
-        "importPath": "sklearn.linear_model",
-        "description": "sklearn.linear_model",
-        "isExtraImport": true,
-        "detail": "sklearn.linear_model",
-        "documentation": {}
-    },
-    {
-        "label": "SVC",
-        "importPath": "sklearn.svm",
-        "description": "sklearn.svm",
-        "isExtraImport": true,
-        "detail": "sklearn.svm",
-        "documentation": {}
-    },
-    {
-        "label": "DecisionTreeClassifier",
-        "importPath": "sklearn.tree",
-        "description": "sklearn.tree",
-        "isExtraImport": true,
-        "detail": "sklearn.tree",
-        "documentation": {}
-    },
-    {
-        "label": "XGBClassifier",
-        "importPath": "xgboost",
-        "description": "xgboost",
-        "isExtraImport": true,
-        "detail": "xgboost",
+        "importPath": "dill",
+        "description": "dill",
+        "detail": "dill",
         "documentation": {}
     },
     {
@@ -337,75 +205,271 @@
         "documentation": {}
     },
     {
-        "label": "VotingClassifier",
-        "importPath": "sklearn.ensemble",
-        "description": "sklearn.ensemble",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.ensemble",
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
-        "label": "BaggingClassifier",
-        "importPath": "sklearn.ensemble",
-        "description": "sklearn.ensemble",
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
         "isExtraImport": true,
-        "detail": "sklearn.ensemble",
+        "detail": "sklearn.preprocessing",
         "documentation": {}
     },
     {
-        "label": "confusion_matrix",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "Tee",
+        "kind": 6,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except IOError:\n                pass\n        tee_f.write(what)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "classification_report",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "accuracy_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info[0],\n        sys.version_info[1],\n        suffix,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "f1_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(\"-> %s\\\\%s[%s]=%r\" % (root_key_name, key_name, value_name, value))\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "precision_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(\"-> DELETE %s\\\\%s[%s]\" % (root_key_name, key_name, value_name))\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "recall_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
         "documentation": {}
     },
     {
-        "label": "\\",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n        like file_created to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(\"Failed to unregister COM objects: %s\" % (why,))\n    try:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location):\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError('Path \"{}\" does not exist!'.format(location))\n    return location\ndef main():\n    import argparse\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    import argparse\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python pywin32_postinstall.py -install\n    If you installed pywin32 via a .exe installer, this should be run\n    automatically after installation, but if it fails you can run it again.\n    If you installed pywin32 via PIP, you almost certainly need to run this to",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(os.path.join(tempfile.gettempdir(), \"pywin32_postinstall.log\"), \"w\")\nclass Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except IOError:\n                pass",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created\n    is_bdist_wininst = True",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created\n    is_bdist_wininst = True\nexcept NameError:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(\"*** Test script '%s' exited with %s\" % (script, result.returncode))\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [this_dir] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "this_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "this_dir = os.path.dirname(__file__)\nsite_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": ".venv.Scripts.pywin32_testall",
         "documentation": {}
     },
     {
@@ -521,7 +585,7 @@
         "kind": 6,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "class PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form\n\tInherits: request.form class\n\t\"\"\"\n\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])",
+        "peekOfCode": "class PredictorsForm(Form):\n    p_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n    sex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n    age = StringField(u'Age (For example: 24)', validators=[validators.input_required()])\n    sibsp = StringField(u'Siblings and Spouse Count (For example: 3)', validators=[validators.input_required()])\n    parch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n    fare = StringField(u'Fare (For example: 100)', validators=[validators.input_required()])\n    embarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n# Index page\n@app.route('/')",
         "detail": "src.app",
         "documentation": {}
     },
@@ -530,7 +594,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n# About me page\n@app.route('/about')\ndef about():\n    return render_template('about.html')\n# Prediction route\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n    form = PredictorsForm(request.form)",
         "detail": "src.app",
         "documentation": {}
     },
@@ -539,7 +603,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):\n\t\"\"\"\n\tThis is a form class to retrieve the input from user through form\n\tInherits: request.form class\n\t\"\"\"\n\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])",
+        "peekOfCode": "def about():\n    return render_template('about.html')\n# Prediction route\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n    form = PredictorsForm(request.form)\n    if request.method == 'POST' and form.validate():\n        p_class = form.p_class.data\n        sex = form.sex.data\n        age = form.age.data",
         "detail": "src.app",
         "documentation": {}
     },
@@ -548,7 +612,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data",
+        "peekOfCode": "def predict():\n    form = PredictorsForm(request.form)\n    if request.method == 'POST' and form.validate():\n        p_class = form.p_class.data\n        sex = form.sex.data\n        age = form.age.data\n        sibsp = form.sibsp.data\n        parch = form.parch.data\n        fare = form.fare.data\n        embarked = form.embarked.data",
         "detail": "src.app",
         "documentation": {}
     },
@@ -557,7 +621,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()",
+        "peekOfCode": "def train():\n    # Reading data\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Defining predictors and label columns\n    predictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n    label = 'Survived'\n    # Splitting data into training and testing\n    df_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n    # Data cleaning and filling missing values\n    df_train.Age = df_train.Age.fillna(df.Age.mean())",
         "detail": "src.app",
         "documentation": {}
     },
@@ -566,331 +630,7 @@
         "kind": 5,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "app = Flask(__name__)\n# Loading model so that it works on production\nmodel = joblib.load('./model/model.pkl')\n@app.route('/')\ndef index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "model",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "model = joblib.load('./model/model.pkl')\n@app.route('/')\ndef index():\n\t# Index page\n\treturn render_template('index.html')\n@app.route('/about')\ndef about():\n\t# about me page\n\treturn render_template('about.html')\nclass PredictorsForm(Form):",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tp_class",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tp_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tsex",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tsex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tage",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tage = StringField(u'Age (For eg.: 24)', validators=[validators.input_required()])\n\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tsibsp",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tsibsp = StringField(u'Siblings and Spouse Count (For eg.: 3)', validators=[validators.input_required()])\n\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tparch",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tparch = StringField(u'Parch (Valid Values: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tfare",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tfare = StringField(u'Fare (For eg.: 100)', validators=[validators.input_required()])\n\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tembarked",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tembarked = StringField(u'Embarked (Valid Values: 0, 1, 2)', validators=[validators.input_required()])\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tform",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tform = PredictorsForm(request.form)\n\t# Checking if user submitted the form and the values are valid\n\tif request.method == 'POST' and form.validate():\n\t\t# Now save all values passed by user into variables\n\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tp_class",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tp_class = form.p_class.data\n\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tsex",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tsex = form.sex.data\n\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tage",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tage = form.age.data\n\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tsibsp",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tsibsp = form.sibsp.data\n\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tparch",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tparch = form.parch.data\n\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tfare",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tfare = form.fare.data\n\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tembarked",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tembarked = form.embarked.data\n\t\t# Creating input for model for predictions\n\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tpredict_request",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tpredict_request = [int(p_class), int(sex), float(age), int(sibsp), int(parch), float(fare), int(embarked)]\n\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tpredict_request",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tpredict_request = np.array(predict_request).reshape(1, -1)\n\t\t# Class predictions from the model\n\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tprediction",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tprediction = model.predict(predict_request)\n\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tprediction",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tprediction = str(prediction[0])\n\t\t# Survival Probability from the model\n\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tpredict_prob",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tpredict_prob = model.predict_proba(predict_request)\n\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\t\tpredict_prob",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\t\tpredict_prob = str(predict_prob[0][1])\n\t\t# Passing the predictions to new view(template)\n\t\treturn render_template('predictions.html', prediction=prediction, predict_prob=predict_prob)\n\treturn render_template('predict.html', form=form)\n@app.route('/train', methods=['GET'])\ndef train():\n\t# reading data\n\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf = pd.read_csv(\"./data/titanic.csv\")\n\t#defining predictors and label columns to be used\n\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tpredictors",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tpredictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tlabel",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tlabel = 'Survived'\n\t#Splitting data into training and testing\n\tdf_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n\t# Data cleaning and filling missing values\n\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tage_fillna",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tage_fillna = df_train.Age.mean()\n\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tembarked_fillna",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tembarked_fillna = df_train.Embarked.value_counts().index[0]\n\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tcabin_fillna",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tcabin_fillna = 'NA'\n\t# filling missing values in training data\n\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_train.Age",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_train.Age = df_train.Age.fillna(df.Age.mean())\n\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_train.Embarked",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_train.Embarked = df_train.Embarked.fillna(embarked_fillna)\n\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_train.Cabin",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_train.Cabin = df_train.Cabin.fillna(cabin_fillna)\n\t# filling missing values imputed from training set to avoid data leakage\n\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_test.Age",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_test.Age = df_test.Age.fillna(df.Age.mean())\n\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_test.Embarked",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_test.Embarked = df_test.Embarked.fillna(embarked_fillna)\n\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tdf_test.Cabin",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tdf_test.Cabin = df_test.Cabin.fillna(cabin_fillna)\n\t# Label encoding of object type predictors\n\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:\n\t    if df_test[column].dtype == np.object:",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tle",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tle = dict()\n\tfor column in df_train.columns:\n\t    if df_train[column].dtype == np.object:\n\t        le[column] = LabelEncoder()\n\t        df_train[column] = le[column].fit_transform(df_train[column])\n\t# Applying same encoding from training data to testing data\n\tfor column in df_test.columns:\n\t    if df_test[column].dtype == np.object:\n\t        df_test[column] = le[column].transform(df_test[column])\n\t# Initializing the model",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "\tmodel",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "\tmodel = RandomForestClassifier(n_estimators=25, random_state=42)\n\t# Fitting the model with training data\n\tmodel.fit(X=df_train, y=y_train)\n\t# Saving the trained model on disk\n\tjoblib.dump(model, './model/model.pkl')\n\t# Return success message for user display on browser\n\treturn 'Success'\nif __name__ == '__main__':\n\t# Load the pre-trained model from the disk\n\t# model = joblib.load('./model/model.pkl')",
+        "peekOfCode": "app = Flask(__name__)\n# Loading model and encoder\nwith open('./model/model.pkl', 'rb') as model_file:\n    model = dill.load(model_file)\n# Defining a form class to retrieve input from the user through a form\nclass PredictorsForm(Form):\n    p_class = StringField(u'P Class (Valid Values: 1, 2, 3)', validators=[validators.input_required()])\n    sex = StringField(u'Sex (0: Female and 1: Male)', validators=[validators.input_required()])\n    age = StringField(u'Age (For example: 24)', validators=[validators.input_required()])\n    sibsp = StringField(u'Siblings and Spouse Count (For example: 3)', validators=[validators.input_required()])",
         "detail": "src.app",
         "documentation": {}
     }
