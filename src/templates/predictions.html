@@ -1,6 +1,49 @@
 {% extends 'layout.html' %} {% block body %}
-<h1>
-  Prediction for this passenger is: {% if prediction == '0' %} Didn't Survive
-  (x_x) {% else %} Survived :) {% endif %}
-  <h1>Survival Probability: {{predict_prob}} {% endblock %}</h1>
-</h1>
+<style>
+  body {
+    background-image: url("{% if prediction == '0' %} https://img.asmedia.epimg.net/resizer/v2/4GJAGNXTNBHAJOV36VSJ2JDCRI.jpg?auth=b2a446c270dc071bcebbef7d55951684d9c9516420686674e67965d517421448&width=1472&height=1104&smart=true 
+    {% else %} https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM_CsemF8btCaZXiCi_R0ctqRqKATpwH-pr-Veq2m7wmGgrdfKFzPMJgeMkyZeRoGZPo&usqp=CAU {% endif %}");
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .survival-info {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .prediction-text {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .probability-info {
+    font-size: 24px;
+  }
+</style>
+
+<div class="container">
+  <div class="survival-info">
+    {% if prediction == '0' %}
+    <img
+      src="https://www.elcorreogallego.es/binrepository/1320x506/210c0/900d506/none/102922340/RFWD/lop32f09212201_880571_manual_CG1160283_MG154541698.jpg"
+      alt="No Sobrevivió"
+    />
+    <p>El pasajero no sobrevivió (x_x)</p>
+    {% else %}
+    <img
+      src="https://cloudfront-us-east-1.images.arcpublishing.com/eluniversal/7Q2UWP3JEBA33KFFFHXZLT67TM.jpg"
+      alt="Sobrevivió"
+    />
+    <p>¡El pasajero sobrevivió! :)</p>
+    {% endif %}
+  </div>
+  <div class="prediction-text">Predicción para este pasajero:</div>
+  <div class="probability-info">
+    Probabilidad de supervivencia: {{predict_prob}}
+  </div>
+</div>
+{% endblock %}

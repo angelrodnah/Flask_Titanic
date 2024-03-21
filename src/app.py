@@ -20,13 +20,13 @@ with open('./model/model.pkl', 'rb') as model_file:
 
 # Definiendo una clase de formulario para recuperar la entrada del usuario a través de un formulario
 class PredictorsForm(Form):
-    p_class = StringField(u'Clase de Pase (Valores válidos: 1, 2, 3)', validators=[validators.input_required()])
+    p_class = StringField(u'Clase a la que pertenecía el pasajero (Valores válidos: 1, 2, 3)', validators=[validators.input_required()])
     sex = StringField(u'Sexo (0: Femenino y 1: Masculino)', validators=[validators.input_required()])
     age = StringField(u'Edad (Por ejemplo: 24)', validators=[validators.input_required()])
     sibsp = StringField(u'Número de hermanos/cónyuge (Por ejemplo: 3)', validators=[validators.input_required()])
-    parch = StringField(u'Parch (Valores válidos: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])
-    fare = StringField(u'Tarifa (Por ejemplo: 100)', validators=[validators.input_required()])
-    embarked = StringField(u'Embarcado (Valores válidos: 0, 1, 2)', validators=[validators.input_required()])
+    parch = StringField(u'Número de padres e hijos en el barco.(Valores válidos: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])
+    fare = StringField(u'Tarifa (Número entero, Por ejemplo: 100)', validators=[validators.input_required()])
+    embarked = StringField(u'Puerto en el que embarcó el pasajero (0: Cherbourg; 1: Queenstown; 2:Southampton)', validators=[validators.input_required()])
 
 # Página de índice
 @app.route('/')

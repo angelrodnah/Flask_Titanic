@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Mi Aplicación Flask del Titanic</title>
+    <title>Flask + DOCKER del Titanic</title>
     <!-- Última versión compilada y minimizada de CSS de Bootstrap -->
     <link
       rel="stylesheet"
@@ -11,36 +11,40 @@
     <!-- Estilos personalizados -->
     <style>
       body {
-        background-color: #f8f8f8; /* Color de fondo */
-        color: #333; /* Color de texto */
-        font-family: Arial, sans-serif; /* Fuente del texto */
-      }
-      .container {
-        margin-top: 20px; /* Margen superior */
-      }
-      .btn {
-        color: #fff; /* Color del texto del botón */
-        background-color: #337ab7; /* Color de fondo del botón */
-        border: none; /* Borde del botón */
-      }
-      .btn:hover {
-        background-color: #286090; /* Color de fondo del botón al pasar el ratón */
-      }
-      .navbar {
-        margin-bottom: 0; /* Elimina el margen inferior de la barra de navegación */
-        border-radius: 0; /* Bordes redondeados */
-        background-color: #337ab7; /* Color de fondo de la barra de navegación */
-        border: none; /* Borde de la barra de navegación */
-      }
-      .navbar-brand {
-        font-weight: bold; /* Texto en negrita para el título del sitio */
-      }
-      .navbar-nav > li > a {
-        color: #fff !important; /* Color del texto del enlace */
-      }
-      .navbar-nav > li > a:hover {
-        background-color: #286090; /* Color de fondo del enlace al pasar el ratón */
-      }
+              font-family: Arial, sans-serif; /* Fuente del texto */
+              margin: 0; /* Eliminar márgenes */
+              padding: 0; /* Eliminar relleno */
+              background-image: url("https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/E6F6/production/_124162195_gettyimages-1371352453.jpg"); /* Imagen de fondo */
+              background-size: cover; /* Cubrir el área completa con la imagen */
+              background-repeat: no-repeat; /* No repetir la imagen */
+              color:
+            .container {
+              margin-top: 20px; /* Margen superior */
+            }
+            .btn {
+              color: #fff; /* Color del texto del botón */
+              background-color: #337ab7; /* Color de fondo del botón */
+              border: none; /* Borde del botón */
+            }
+            .btn:hover {
+              background-color: #286090; /* Color de fondo del botón al pasar el ratón */
+            }
+            .navbar {
+              margin-bottom: 0; /* Elimina el margen inferior de la barra de navegación */
+              border-radius: 0; /* Bordes redondeados */
+              background-color: #000000; /* Color de fondo de la barra de navegación */
+              border: none; /* Borde de la barra de navegación */
+              color: #ffffff; /* Color de texto del navbar */
+            }
+            .navbar-brand {
+              font-weight: bold; /* Texto en negrita para el título del sitio */
+            }
+            .navbar-nav > li > a {
+              color: #fff !important; /* Color del texto del enlace */
+            }
+            .navbar-nav > li > a:hover {
+              background-color: #286090; /* Color de fondo del enlace al pasar el ratón */
+            }
     </style>
   </head>
   <body>
@@ -60,7 +64,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Mi Aplicación</a>
+          <a class="navbar-brand" href="#">Supervivencia en el Titanic</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
