@@ -4,10 +4,10 @@
 FROM python:3.11-slim
 
 # Establece el directorio de trabajo en /app
-WORKDIR /Flask_Titanic
+WORKDIR /app
 
 # Copia el archivo requirements.txt al contenedor
-COPY requirements.txt /app
+COPY requirements.txt /app/requirements.txt
 
 # Instala las dependencias del proyecto
 RUN pip install -r requirements.txt
