@@ -158,4 +158,4 @@ def train():
     return 'Modelo entrenado exitosamente con precisión de {}%'.format(round(test_accuracy*100, 2))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
