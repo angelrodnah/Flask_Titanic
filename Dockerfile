@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 RUN apt-get update && apt-get install -y libgomp1
 # Comando para ejecutar la aplicación Flask
-CMD ["python", "app.py"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]

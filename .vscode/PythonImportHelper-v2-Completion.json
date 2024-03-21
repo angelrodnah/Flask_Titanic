@@ -505,64 +505,64 @@
     {
         "label": "PredictorsForm",
         "kind": 6,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "class PredictorsForm(Form):\n    p_class = StringField(u'Clase a la que pertenecía el pasajero (Valores válidos: 1, 2, 3)', validators=[validators.input_required()])\n    sex = StringField(u'Sexo (0: Femenino y 1: Masculino)', validators=[validators.input_required()])\n    age = StringField(u'Edad (Por ejemplo: 24)', validators=[validators.input_required()])\n    sibsp = StringField(u'Número de hermanos/cónyuge (Por ejemplo: 3)', validators=[validators.input_required()])\n    parch = StringField(u'Número de padres e hijos en el barco.(Valores válidos: 0, 1, 2, 3, 4, 5, 6)', validators=[validators.input_required()])\n    fare = StringField(u'Tarifa (Número entero, Por ejemplo: 100)', validators=[validators.input_required()])\n    embarked = StringField(u'Puerto en el que embarcó el pasajero (0: Cherbourg; 1: Queenstown; 2:Southampton)', validators=[validators.input_required()])\n# Página de índice\n@app.route('/')",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "index",
         "kind": 2,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def index():\n    return render_template('index.html')\n# Página sobre mí\n@app.route('/about')\ndef about():\n    return render_template('about.html')\n#Ruta de api\n@app.route('/predict_api', methods=['POST'])\ndef predict_api():\n    data = request.get_json()",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "about",
         "kind": 2,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def about():\n    return render_template('about.html')\n#Ruta de api\n@app.route('/predict_api', methods=['POST'])\ndef predict_api():\n    data = request.get_json()\n    p_class = data.get('p_class')\n    sex = data.get('sex')\n    age = data.get('age')\n    sibsp = data.get('sibsp')",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "predict_api",
         "kind": 2,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def predict_api():\n    data = request.get_json()\n    p_class = data.get('p_class')\n    sex = data.get('sex')\n    age = data.get('age')\n    sibsp = data.get('sibsp')\n    parch = data.get('parch')\n    fare = data.get('fare')\n    embarked = data.get('embarked')\n    # Verificar si se proporcionaron todos los campos necesarios",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "predict",
         "kind": 2,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def predict():\n    form = PredictorsForm(request.form)\n    if request.method == 'POST' and form.validate():\n        p_class = form.p_class.data\n        sex = form.sex.data\n        age = form.age.data\n        sibsp = form.sibsp.data\n        parch = form.parch.data\n        fare = form.fare.data\n        embarked = form.embarked.data",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "train",
         "kind": 2,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def train():\n    # Leyendo los datos\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Limpieza de datos y rellenado de valores faltantes\n    df['Age'] = df['Age'].fillna(df['Age'].mean())\n    df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])\n    df['Fare'] = df['Fare'].fillna(df['Fare'].mean())\n    df['Pclass'] = df['Pclass'].fillna(df['Pclass'].mode()[0])\n    df['Sex'] = df['Sex'].fillna(df['Sex'].mode()[0])\n    # Definiendo las columnas predictoras y de etiqueta",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "app.app",
-        "description": "app.app",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "app = Flask(__name__)\n# Cargando el modelo y el codificador\nwith open('./model/model.pkl', 'rb') as model_file:\n    model = dill.load(model_file)\n# Definiendo una clase de formulario para recuperar la entrada del usuario a través de un formulario\nclass PredictorsForm(Form):\n    p_class = StringField(u'Clase a la que pertenecía el pasajero (Valores válidos: 1, 2, 3)', validators=[validators.input_required()])\n    sex = StringField(u'Sexo (0: Femenino y 1: Masculino)', validators=[validators.input_required()])\n    age = StringField(u'Edad (Por ejemplo: 24)', validators=[validators.input_required()])\n    sibsp = StringField(u'Número de hermanos/cónyuge (Por ejemplo: 3)', validators=[validators.input_required()])",
-        "detail": "app.app",
+        "detail": "app",
         "documentation": {}
     }
 ]
