@@ -1,20 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>My Titanic Flask App</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
-
+    <meta charset="utf-8" />
+    <title>Mi Aplicación Flask del Titanic</title>
+    <!-- Última versión compilada y minimizada de CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        background-color: #f8f8f8; /* Color de fondo */
+        color: #333; /* Color de texto */
+        font-family: Arial, sans-serif; /* Fuente del texto */
+      }
+      .container {
+        margin-top: 20px; /* Margen superior */
+      }
+      .btn {
+        color: #fff; /* Color del texto del botón */
+        background-color: #337ab7; /* Color de fondo del botón */
+        border: none; /* Borde del botón */
+      }
+      .btn:hover {
+        background-color: #286090; /* Color de fondo del botón al pasar el ratón */
+      }
+      .navbar {
+        margin-bottom: 0; /* Elimina el margen inferior de la barra de navegación */
+        border-radius: 0; /* Bordes redondeados */
+        background-color: #337ab7; /* Color de fondo de la barra de navegación */
+        border: none; /* Borde de la barra de navegación */
+      }
+      .navbar-brand {
+        font-weight: bold; /* Texto en negrita para el título del sitio */
+      }
+      .navbar-nav > li > a {
+        color: #fff !important; /* Color del texto del enlace */
+      }
+      .navbar-nav > li > a:hover {
+        background-color: #286090; /* Color de fondo del enlace al pasar el ratón */
+      }
+    </style>
   </head>
   <body>
-    {% include 'includes/_navbar.html' %}
-    <div class='container'>
-      {% block body %}{% endblock %}
-    </div>
-    <!-- Latest compiled and minified JavaScript -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Alternar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mi Aplicación</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">Acerca de</a></li>
+            <li><a href="/predict">Predicción</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">{% block body %}{% endblock %}</div>
+    <!-- Última versión compilada y minimizada de JavaScript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

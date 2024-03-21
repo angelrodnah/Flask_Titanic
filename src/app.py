@@ -1,7 +1,7 @@
 # Importando las bibliotecas necesarias
 import numpy as np
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,redirect, url_for
 from wtforms import Form, StringField, validators
 import dill
 
@@ -71,21 +71,20 @@ def train():
     df = pd.read_csv("./data/titanic.csv")
 
     # Definiendo las columnas predictoras y de etiqueta
-    predictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
+    predictors = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
     label = 'Survived'
 
     # Dividiendo los datos en entrenamiento y prueba
     df_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)
 
     # Limpieza de datos y rellenado de valores faltantes
-    df_train.Age = df_train.Age.fillna(df.Age.mean())
-    df_train.Embarked = df_train.Embarked.fillna(df_train.Embarked.mode()[0])
+    df_train['Age'] = df_train['Age'].fillna(df['Age'].mean())
+    df_train['Embarked'] = df_train['Embarked'].fillna(df_train['Embarked'].mode()[0])
 
     # Codificación de variables categóricas
-    for column in df_train.columns:
-        if df_train[column].dtype == np.object:
-            le = LabelEncoder()
-            df_train[column] = le.fit_transform(df_train[column])
+    for column in df_train.select_dtypes(include=['object']).columns:
+        le = LabelEncoder()
+        df_train[column] = le.fit_transform(df_train[column])
 
     # Inicializando el modelo
     model = RandomForestClassifier(n_estimators=25, random_state=42)

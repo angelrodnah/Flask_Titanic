@@ -114,6 +114,22 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "Form",
         "importPath": "wtforms",
         "description": "wtforms",
@@ -463,7 +479,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def train():\n    # Leyendo los datos\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Definiendo las columnas predictoras y de etiqueta\n    predictors = ['Pclass','Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n    label = 'Survived'\n    # Dividiendo los datos en entrenamiento y prueba\n    df_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n    # Limpieza de datos y rellenado de valores faltantes\n    df_train.Age = df_train.Age.fillna(df.Age.mean())",
+        "peekOfCode": "def train():\n    # Leyendo los datos\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Definiendo las columnas predictoras y de etiqueta\n    predictors = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n    label = 'Survived'\n    # Dividiendo los datos en entrenamiento y prueba\n    df_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n    # Limpieza de datos y rellenado de valores faltantes\n    df_train['Age'] = df_train['Age'].fillna(df['Age'].mean())",
         "detail": "src.app",
         "documentation": {}
     },

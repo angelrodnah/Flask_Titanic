@@ -1,6 +1,12 @@
-{% extends 'layout.html' %}
-
-{% block body %}
-  <h1>About us</h1>
-    <p>Hi, I'm Gaurav!</p>
+# En about.html (o cualquier otra página donde desees un botón para la
+predicción) {% extends 'layout.html' %} {% block body %}
+<div class="container">
+  <h1>About Us</h1>
+  <p>
+    ¡Somos una aplicación Flask de aprendizaje automático para predecir la
+    supervivencia en el Titanic!
+  </p>
+  <!-- Botón para dirigir a la página de predicción -->
+  <a class="btn btn-primary" href="/predict">Realizar Predicción</a>
+</div>
 {% endblock %}
