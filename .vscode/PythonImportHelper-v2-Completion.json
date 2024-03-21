@@ -130,6 +130,14 @@
         "documentation": {}
     },
     {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "Form",
         "importPath": "wtforms",
         "description": "wtforms",
@@ -163,11 +171,27 @@
         "documentation": {}
     },
     {
-        "label": "RandomForestClassifier",
-        "importPath": "sklearn.ensemble",
-        "description": "sklearn.ensemble",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.ensemble",
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StratifiedKFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
@@ -176,6 +200,46 @@
         "description": "sklearn.model_selection",
         "isExtraImport": true,
         "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "GradientBoostingClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "LGBMClassifier",
+        "importPath": "lightgbm",
+        "description": "lightgbm",
+        "isExtraImport": true,
+        "detail": "lightgbm",
         "documentation": {}
     },
     {
@@ -452,7 +516,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def index():\n    return render_template('index.html')\n# Página sobre mí\n@app.route('/about')\ndef about():\n    return render_template('about.html')\n# Ruta de predicción\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n    form = PredictorsForm(request.form)",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n# Página sobre mí\n@app.route('/about')\ndef about():\n    return render_template('about.html')\n#Ruta de api\n@app.route('/predict_api', methods=['POST'])\ndef predict_api():\n    data = request.get_json()",
         "detail": "src.app",
         "documentation": {}
     },
@@ -461,7 +525,16 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def about():\n    return render_template('about.html')\n# Ruta de predicción\n@app.route('/predict', methods=['GET', 'POST'])\ndef predict():\n    form = PredictorsForm(request.form)\n    if request.method == 'POST' and form.validate():\n        p_class = form.p_class.data\n        sex = form.sex.data\n        age = form.age.data",
+        "peekOfCode": "def about():\n    return render_template('about.html')\n#Ruta de api\n@app.route('/predict_api', methods=['POST'])\ndef predict_api():\n    data = request.get_json()\n    p_class = data.get('p_class')\n    sex = data.get('sex')\n    age = data.get('age')\n    sibsp = data.get('sibsp')",
+        "detail": "src.app",
+        "documentation": {}
+    },
+    {
+        "label": "predict_api",
+        "kind": 2,
+        "importPath": "src.app",
+        "description": "src.app",
+        "peekOfCode": "def predict_api():\n    data = request.get_json()\n    p_class = data.get('p_class')\n    sex = data.get('sex')\n    age = data.get('age')\n    sibsp = data.get('sibsp')\n    parch = data.get('parch')\n    fare = data.get('fare')\n    embarked = data.get('embarked')\n    # Verificar si se proporcionaron todos los campos necesarios",
         "detail": "src.app",
         "documentation": {}
     },
@@ -479,7 +552,7 @@
         "kind": 2,
         "importPath": "src.app",
         "description": "src.app",
-        "peekOfCode": "def train():\n    # Leyendo los datos\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Definiendo las columnas predictoras y de etiqueta\n    predictors = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']\n    label = 'Survived'\n    # Dividiendo los datos en entrenamiento y prueba\n    df_train, df_test, y_train, y_test = train_test_split(df[predictors], df[label], test_size=0.20, random_state=42)\n    # Limpieza de datos y rellenado de valores faltantes\n    df_train['Age'] = df_train['Age'].fillna(df['Age'].mean())",
+        "peekOfCode": "def train():\n    # Leyendo los datos\n    df = pd.read_csv(\"./data/titanic.csv\")\n    # Limpieza de datos y rellenado de valores faltantes\n    df['Age'] = df['Age'].fillna(df['Age'].mean())\n    df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])\n    df['Fare'] = df['Fare'].fillna(df['Fare'].mean())\n    df['Pclass'] = df['Pclass'].fillna(df['Pclass'].mode()[0])\n    df['Sex'] = df['Sex'].fillna(df['Sex'].mode()[0])\n    # Definiendo las columnas predictoras y de etiqueta",
         "detail": "src.app",
         "documentation": {}
     },
